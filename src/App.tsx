@@ -5,6 +5,7 @@ import About from "./components/sections/About";
 import WhyChooseUs from "./components/sections/WhyChooseUs";
 import Services from "./components/sections/Services";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/Footer"
 
 const App: React.FC = () => {
   // Use MutableRefObject to correctly handle null values
@@ -34,6 +35,7 @@ const App: React.FC = () => {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer  refs={{ aboutRef, chooseRef, servicesRef, contactRef }}/>
     </div>
   );
 };

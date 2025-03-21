@@ -9,10 +9,9 @@ function Services() {
     <section className="bg-black text-white py-20 px-6">
       <div className="container mx-auto text-center">
         {/* Section Heading */}
-        <h2 className="text-5xl font-bold mb-6">Our Services</h2>
+        <h2 className="text-5xl mb-6">Our Services</h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-          Discover the range of AI-driven solutions we offer, designed to
-          transform your business and automate workflows.
+        SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
         </p>
 
         {/* Services Grid */}

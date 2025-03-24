@@ -1,25 +1,50 @@
 import React from "react";
-import './contact.css';
+import { motion } from "framer-motion";
+// import bgImage from "../../images/contactBg.svg"; 
 
 const Contact: React.FC = () => {
   return (
-    <>
-    <section className="h-screen flex flex-col justify-center items-center bg-gray-400">
-      <h1 className="text-4xl font-bold text-gray-800">Contact Us</h1>
-      <p className="mt-4 text-gray-600">Reach out to us anytime! More details coming soon.</p>
-      </section>
-      {/* <div className="parent">
-    <div className="div1">Ragul</div>
-    <div className="div2">Ragul</div>
-    <div className="div3">Ragul</div>
-    <div className="div4">Ragul</div>
-    <div className="div5">Ragul</div>
-    <div className="div6">Ragul</div>
-    <div className="div7">Ragul</div>
-    <div className="div8">Ragul</div>
-</div> */}
-    
-    </>
+    <section
+      className="relative bg-black text-white min-h-screen flex justify-center items-center "
+      style={{
+        backgroundImage: `url('/contact0Bg.png')`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundColor: "#000" // fallback in case image fails
+      }}
+    >
+      {/* Optional: dark overlay for text visibility */}
+      <div className=" inset-0 bg-black bg-opacity-50 z-0"></div>
+
+      {/* Text Content */}
+      <motion.div
+        initial={{ y: 60, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-center z-10"
+      >
+        <h1 className="text-4xl md:text-6xl font-light leading-tight">
+          The future of your <br />
+          industry{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-pink-500 font-medium">
+            starts here.
+          </span>
+        </h1>
+
+        <div className="mt-8 flex gap-4 justify-center flex-wrap">
+          <button className="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition-all">
+            View Demo →
+          </button>
+          <a
+            href="https://forms.gle/RDwapy9eVabESTzL8"
+            className="px-6 py-2 rounded-md border border-white hover:bg-white hover:text-black transition-all font-medium"
+          >
+            Get in touch →
+          </a>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 

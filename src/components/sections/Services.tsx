@@ -1,80 +1,155 @@
-import React from 'react';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
-import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
+// import React from "react";
+// import SmartToyIcon from "@mui/icons-material/SmartToy";
+// import BrandingWatermarkIcon from "@mui/icons-material/BrandingWatermark";
+// import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
+// import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
+// function Services() {
+//   const services = [
+//     {
+//       icon: <SmartToyIcon className="text-blue-400 text-[64px]" />, 
+//       tag: "AI Chatbot",
+//       title: "EmConversational AI Assistants",
+//       href: "/services/ai-chatbot",
+//     },
+//     {
+//       icon: <BrandingWatermarkIcon className="text-purple-400 text-[64px]" />,
+//       tag: "Single Thread Agent",
+//       title: "Task-Oriented AI Workflows",
+//       href: "/services/single-thread-agent",
+//     },
+//     {
+//       icon: <DynamicFeedIcon className="text-green-400 text-[64px]" />,
+//       tag: "Multi-thread Agent",
+//       title: "Collaborative AI Automation",
+//       href: "/services/multi-thread-agent",
+//     },
+//   ];
+  
+//   return (
+//     <section className="bg-black text-white py-20 px-6">
+//       <div className="container mx-auto text-center">
+//         {/* Section Heading */}
+//         <h2 className="text-5xl mb-6">Our Services</h2>
+//         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+//           SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
+//         </p>
+
+//         {/* Cards Grid */}
+//         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-start">
+//           {services.map((service, index) => (
+//           <div
+//           key={index}
+//           className="relative flex gap-6 items-start p-6 rounded-2xl bg-[#141414] text-left shadow-[rgba(255,255,255,0.05)_0px_4px_10px,rgba(0,0,0,0.3)_0px_2px_6px] hover:shadow-lg transition-all min-h-[170px]"
+//         >
+//           {/* Left Icon */}
+//           <div className="flex-shrink-0 mt-1">{service.icon}</div>
+        
+//           {/* Right Content */}
+//           <div className="flex flex-col justify-center flex-grow pr-10">
+//             <span className="text-sm text-purple-400 mb-1">{service.tag}</span>
+//             <h3 className="text-lg font-semibold leading-snug mb-2">
+//               {service.title}
+//             </h3>
+//             {/* 🆕 Small description below */}
+//             <p className="text-gray-400 text-sm">
+//               Automate conversations and enhance customer experience with smart interactions.
+//             </p>
+//           </div>
+        
+//           {/* CTA Icon */}
+//           <a
+//             href={service.href}
+//             className="absolute bottom-4 right-4 w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center hover:border-white transition"
+//           >
+//             <ArrowOutwardIcon className="text-sm" />
+//           </a>
+//         </div>
+        
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Services;
+
+
+import React from "react";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import BrandingWatermarkIcon from "@mui/icons-material/BrandingWatermark";
+import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 function Services() {
+  const services = [
+    {
+      icon: <SmartToyIcon className="text-blue-400 text-[64px]" />,
+      tag: "AI Chatbot",
+      title: "EmConversational AI Assistants",
+      description:
+        "Automate conversations and enhance customer experience with smart interactions.",
+      href: "/services/ai-chatbot",
+    },
+    {
+      icon: <BrandingWatermarkIcon className="text-purple-400 text-[64px]" />,
+      tag: "Single Thread Agent",
+      title: "Task-Oriented AI Workflows",
+      description:
+        "Design streamlined workflows powered by AI to complete tasks with precision.",
+      href: "/services/single-thread-agent",
+    },
+    {
+      icon: <DynamicFeedIcon className="text-green-400 text-[64px]" />,
+      tag: "Multi-thread Agent",
+      title: "Collaborative AI Automation",
+      description:
+        "Empower agents to handle multiple tasks simultaneously and boost productivity.",
+      href: "/services/multi-thread-agent",
+    },
+  ];
+
   return (
     <section className="bg-black text-white py-20 px-6">
       <div className="container mx-auto text-center">
-        {/* Section Heading */}
         <h2 className="text-5xl mb-6">Our Services</h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-        SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
+          SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
         </p>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* AI Chatbot */}
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="flex justify-center mb-4">
-              
-              <SmartToyIcon className="text-blue-400 text-6xl" />
-              
-            </div>
-            <h3 className="text-2xl font-semibold mb-4">AI Chatbot</h3>
-            <p className="text-gray-400">
-              Automate conversations and enhance customer engagement with our
-              intelligent chatbot solutions.
-            </p>
-            <a
-              href="/services/ai-chatbot"
-              className="mt-6 inline-block text-blue-400 border border-blue-400 px-6 py-2 rounded-md hover:bg-blue-400 hover:text-black transition"
+        {/* Cards Grid */}
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-start">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="relative flex gap-6 items-start p-6 rounded-2xl bg-[#141414] text-left shadow-[rgba(255,255,255,0.05)_0px_4px_10px,rgba(0,0,0,0.3)_0px_2px_6px] hover:shadow-lg transition-all min-h-[200px]"
             >
-              Learn More →
-            </a>
-          </div>
+              {/* Left Icon */}
+              <div className="flex-shrink-0 mt-1">{service.icon}</div>
 
-          {/* Single Thread Agent */}
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="flex justify-center mb-4">
-              <BrandingWatermarkIcon className="text-purple-400 text-6xl" /> 
-            </div>
-            <h3 className="text-2xl font-semibold mb-4">Single Thread Agent</h3>
-            <p className="text-gray-400">
-              A streamlined AI solution focused on executing sequential tasks
-              with high efficiency.
-            </p>
-            <a
-              href="/services/single-thread-agent"
-              className="mt-6 inline-block text-purple-400 border border-purple-400 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition"
-            >
-              Learn More →
-            </a>
-          </div>
+              {/* Right Content */}
+              <div className="flex flex-col justify-center flex-grow pr-10">
+                <span className="text-sm text-purple-400 mb-1">{service.tag}</span>
+                <h3 className="text-lg font-semibold leading-snug mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-sm">{service.description}</p>
+              </div>
 
-          {/* Multi-thread Agent */}
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="flex justify-center mb-4">
-              <DynamicFeedIcon className="text-green-400 text-6xl" />
+              {/* CTA Icon */}
+              <a
+                href={service.href}
+                className="absolute bottom-4 right-4 w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center hover:border-white transition"
+              >
+                <ArrowOutwardIcon className="text-sm" />
+              </a>
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Multi-thread Agent</h3>
-            <p className="text-gray-400">
-              Our AI agent that handles multiple tasks simultaneously, boosting
-              productivity and automation.
-            </p>
-            <a
-              href="/services/multi-thread-agent"
-              className="mt-6 inline-block text-green-400 border border-green-400 px-6 py-2 rounded-md hover:bg-green-400 hover:text-black transition"
-            >
-              Learn More →
-            </a>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Services;

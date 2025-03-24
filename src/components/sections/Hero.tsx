@@ -5,7 +5,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ servicesRef }) => {
-  const words = ["Generative AI", "Enterprise AI"];
+  const words = ["Unleash Text Generation", "Code Automation", "Knowledge Reasoning", "Conversational Intelligence"];
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -45,11 +45,11 @@ const Hero: React.FC<HeroProps> = ({ servicesRef }) => {
         Power <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">{text}</span>
         <span className="text-white animate-blink">|</span>
       </h1>
-      <h1 className="text-[70px] leading-tight tracking-tight">With Your Data</h1>
+      <h1 className="text-[70px] leading-tight tracking-tight">With Your Enterprise Data</h1>
 
       {/* Subtext */}
       <p className="text-gray-300 text-lg max-w-2xl mt-6 leading-relaxed">
-        Make the best models with the best data. Scale Data Engine powers nearly every major foundation model and leverages your enterprise data to unlock the value of AI.
+      Orchestrate intelligent agents like Architects, Developers, and QA to plan, build, and validate applications — all powered by your enterprise data. Eliminate workflow silos and unlock true AI-driven productivity.
       </p>
 
       {/* CTA Buttons */}

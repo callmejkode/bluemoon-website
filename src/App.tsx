@@ -17,17 +17,19 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    
-    const timer = setTimeout(() => setLoading(false), 2500);
+    const timer = setTimeout(() => setLoading(false), 2500); // keep in sync with animation duration
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Preloader />;
-
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth relative">
+      {/* Preloader stays mounted but animates away when loading = false */}
+      <Preloader loading={loading} />
+
+      {/* Main Site */}
       <Navbar refs={{ aboutRef, chooseRef, servicesRef, contactRef }} />
-      <Hero servicesRef={servicesRef} />
+      <Hero servicesRef={servicesRef} loading={loading} />
+      
       <div ref={aboutRef}>
         <About />
       </div>

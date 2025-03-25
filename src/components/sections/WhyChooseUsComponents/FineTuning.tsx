@@ -14,14 +14,9 @@ const stages = [
       "Incorporate role-aware architecture and dynamic feedback loops for smarter decision-making and Validate agent behavior with continuous RLHF strategies to ensure accuracy, consistency, and learning.",
   },
   {
-    title: "Deployment",
+    title: "Deployment & Iteration",
     description:
-      "Deploy fine-tuned agents into production with adaptive capabilities across diverse enterprise scenarios.",
-  },
-  {
-    title: "Iteration",
-    description:
-      "Collect real-world feedback, fine-tune continuously, and improve model performance over time.",
+      "Deploy fine-tuned agents into production with adaptive capabilities across diverse enterprise scenarios and Collect real-world feedback, fine-tune continuously, and improve model performance over time.",
   },
 ];
 

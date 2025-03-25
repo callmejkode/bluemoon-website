@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
 
   return (
     <footer className="bg-black text-white pt-12">
-      <div className="container mx-auto px-8 grid grid-cols-5 py-12">
+      <div className="container mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 py-12">
         {/* First Section: BlueMoon */}
         <div className="col-span-2 space-y-2">
           <h1 className="text-2xl font-semibold">BlueMoon</h1>

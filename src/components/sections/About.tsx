@@ -47,7 +47,7 @@ const About: React.FC = () => {
         </h2>
         <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
           It is a long established fact that a reader will be of a page when
-          established fact looking at its layout.
+          established fact looking at its layout
         </p>
       </motion.div>
 

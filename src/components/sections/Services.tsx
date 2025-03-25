@@ -89,7 +89,7 @@ function Services() {
       tag: "AI Chatbot",
       title: "EmConversational AI Assistants",
       description:
-        "Automate conversations and enhance customer experience with smart interactions.",
+        "Automate conversations and enhance customer experience with smart interactions",
       href: "http://localhost:5173/",
     },
     {
@@ -97,7 +97,7 @@ function Services() {
       tag: "Single Thread Agent",
       title: "Task-Oriented AI Workflows",
       description:
-        "Design streamlined workflows powered by AI to complete tasks with precision.",
+        "Design streamlined workflows powered by AI to complete tasks with precision",
         href: "http://localhost:5173/",
     },
     {
@@ -105,7 +105,7 @@ function Services() {
       tag: "Multi-thread Agent",
       title: "Collaborative AI Automation",
       description:
-        "Empower agents to handle multiple tasks simultaneously and boost productivity.",
+        "Empower agents to handle multiple tasks simultaneously and boost productivity",
         href: "http://localhost:5173/",
     },
   ];
@@ -115,7 +115,7 @@ function Services() {
       <div className="container mx-auto pt-30 text-center">
         <h2 className="text-5xl mb-6">Our Services</h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-          SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research.
+          SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research
         </p>
 
         {/* Cards Grid */}

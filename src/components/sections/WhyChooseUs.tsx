@@ -10,17 +10,17 @@ const WhyChooseUs: React.FC = () => {
     {
       title: "Fine-Tuning and RLHF",
       description:
-        "Customize agent behaviors and decision-making with domain-specific instructions and continuous feedback — enabling smarter, role-aware outputs across planning, development, and testing.",
+        "Customize agent behaviors and decision-making with domain-specific instructions and continuous feedback — enabling smarter, role-aware outputs across planning, development, and testing",
     },
     {
       title: "Foundation Models",
       description:
-        "AI BlueMoon integrates OpenAI Assistants API and other leading LLMs to power specialized agents — from Software Architects to QA — with reliable and context-aware reasoning.",
+        "AI BlueMoon integrates OpenAI Assistants API and other leading LLMs to power specialized agents — from Software Architects to QA — with reliable and context-aware reasoning",
     },
     {
       title: "Enterprise Data",
       description:
-        "Inject your enterprise data into AI BlueMoon’s collaborative agent engine to automate task pipelines, accelerate delivery, and ensure consistency across all code, test, and release workflows.",
+        "Inject your enterprise data into AI BlueMoon’s collaborative agent engine to automate task pipelines, accelerate delivery, and ensure consistency across all code, test, and release workflows",
     },
   ];
   const renderComponent = () => {
@@ -46,7 +46,7 @@ const WhyChooseUs: React.FC = () => {
         </span>
         <h2 className="text-4xl font-bold mt-4">AI BlueMoon isn’t just a chatbot</h2>
         <p className="text-gray-400 mt-3 max-w-2xl">
-        From Software Architecture to Development to Testing, every role is powered by specialized agents working in sync.
+        From Software Architecture to Development to Testing, every role is powered by specialized agents working in sync
         </p>
         <button onClick={() => window.location.href = "http://localhost:5173/"} className="mt-6 flex items-center gap-2 px-6 py-2 border border-gray-500 rounded-md text-gray-300 hover:text-white hover:border-white transition-all">
          View Demo →

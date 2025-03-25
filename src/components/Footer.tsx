@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
           <h3 className="text-2xl font-semibold mb-4">
           Intelligence thrives where agents align, collaborate, and bridge gaps —{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-            it’s AI made human.
+            it’s AI made human
             </span>
           </h3>
           <div className="flex space-x-8 text-gray-400">
@@ -104,7 +104,7 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
 
       {/* Bottom Section: Copyright */}
       <div className="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 py-4">
-        &copy; {new Date().getFullYear()} BlueMoon. All rights reserved to Payoda.
+        &copy; {new Date().getFullYear()} BlueMoon. All rights reserved to Payoda
       </div>
     </footer>
   );

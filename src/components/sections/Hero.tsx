@@ -82,7 +82,7 @@ const Hero: React.FC<HeroProps> = ({ servicesRef, loading }) => {
         transition={{ duration: 1, delay: 1.3 }}
       >
         Orchestrate AI agents — Architects, Developers & QA — to plan, build,
-        and validate faster.
+        and validate faster
       </motion.p>
 
       {/* Buttons */}

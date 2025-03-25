@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
           The future of your <br />
           industry{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-pink-500 font-medium">
-            starts here.
+            starts here
           </span>
         </h1>
 

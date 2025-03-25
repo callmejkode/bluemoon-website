@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 code {
   font-family: "Kode Mono", monospace;
@@ -21,4 +24,8 @@ h1 , h2 , h3 , h4 {
 
 p , span a{
   font-family: " Kode Code", monospace;
+}
+
+a , button:hover{
+cursor: pointer;
 }

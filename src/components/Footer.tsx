@@ -27,9 +27,8 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
         <div className="col-span-2 space-y-2">
           <h1 className="text-2xl font-semibold">BlueMoon</h1>
           <p className="text-gray-400 max-w-sm leading-relaxed">
-            <br />
-            <span className="font-semibold">
-            AI BlueMoon is your intelligent workspace for building smarter, faster solutions. From architecture to testing, our AI agents collaborate like real teams to streamline every phase of your product lifecycle            </span>
+            <span className="font-semibold" style={{lineHeight: 'normal' }}>
+            AI BlueMoon is your intelligent workspace for building smarter, faster solutions. From architecture to testing, our AI agents collaborate like real teams to streamline every phase of your product lifecycle</span>
           </p>
         </div>
 
@@ -75,8 +74,7 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
         {/* Third Section: Contact Information */}
         <div className="col-span-2">
           <h3 className="text-2xl font-semibold mb-4">
-          Intelligence emerges where roles meet purpose, where agents collaborate, and where insight bridges gaps.
-          This is not just automation —{" "}
+          Intelligence thrives where agents align, collaborate, and bridge gaps —{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
             it’s AI made human.
             </span>

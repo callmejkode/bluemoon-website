@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
         initial={{ y: 60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-center z-10"
+        className="text-center "
       >
         <h1 className="text-4xl md:text-6xl font-light leading-tight">
           The future of your <br />
@@ -43,6 +43,13 @@ const Contact: React.FC = () => {
             Get in touch →
           </a>
         </div>
+          {/* Floating 3D Elements */}
+      <div className="absolute top-28 left-16 animate-pulse">
+        <div className="w-56 h-56 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 blur-2xl"></div>
+      </div>
+      <div className="absolute bottom-16 right-20 animate-pulse">
+        <div className="w-56 h-56 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 opacity-50 blur-2xl"></div>
+      </div>
       </motion.div>
     </section>
   );

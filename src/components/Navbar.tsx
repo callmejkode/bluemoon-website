@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
 
         {/* View Demo Button (Boxed with slight border-radius) */}
         <button
-          onClick={() => window.location.href = "/demo"}
+          onClick={() => window.location.href = "http://localhost:5173/"}
           className="bg-gray-700 text-white font-semibold px-6 py-2 rounded-md hover:bg-gray-600 transition shadow-md"
         >
           View Demo →

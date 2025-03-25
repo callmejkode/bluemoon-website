@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import bgImage from "../../images/contactBg.svg"; 
 
 const Contact: React.FC = () => {
   return (
@@ -11,13 +10,13 @@ const Contact: React.FC = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundColor: "#000" // fallback in case image fails
+        backgroundColor: "#000" 
       }}
     >
-      {/* Optional: dark overlay for text visibility */}
+
       <div className=" inset-0 bg-black bg-opacity-50 z-0"></div>
 
-      {/* Text Content */}
+
       <motion.div
         initial={{ y: 60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -33,7 +32,7 @@ const Contact: React.FC = () => {
         </h1>
 
         <div className="mt-8 flex gap-4 justify-center flex-wrap">
-          <button className="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition-all">
+          <button onClick={() => window.location.href = "http://localhost:5173/"} className="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition-all">
             View Demo →
           </button>
           <a target="_blank"
@@ -43,7 +42,7 @@ const Contact: React.FC = () => {
             Get in touch →
           </a>
         </div>
-          {/* Floating 3D Elements */}
+
       <div className="absolute top-28 left-16 animate-pulse">
         <div className="w-56 h-56 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 blur-2xl"></div>
       </div>

@@ -93,7 +93,7 @@ const Hero: React.FC<HeroProps> = ({ servicesRef, loading }) => {
         transition={{ duration: 1, delay: 1.6 }}
       >
         <button
-          onClick={() => (window.location.href = "/demo")}
+          onClick={() => (window.location.href = "http://localhost:5173/")}
           className="bg-white text-black font-semibold px-8 py-3 rounded-md hover:bg-gray-200 transition shadow-lg border border-gray-400"
         >
           View Demo →

@@ -90,7 +90,7 @@ function Services() {
       title: "EmConversational AI Assistants",
       description:
         "Automate conversations and enhance customer experience with smart interactions.",
-      href: "/services/ai-chatbot",
+      href: "http://localhost:5173/",
     },
     {
       icon: <BrandingWatermarkIcon className="text-purple-400 text-[64px]" />,
@@ -98,7 +98,7 @@ function Services() {
       title: "Task-Oriented AI Workflows",
       description:
         "Design streamlined workflows powered by AI to complete tasks with precision.",
-      href: "/services/single-thread-agent",
+        href: "http://localhost:5173/",
     },
     {
       icon: <DynamicFeedIcon className="text-green-400 text-[64px]" />,
@@ -106,7 +106,7 @@ function Services() {
       title: "Collaborative AI Automation",
       description:
         "Empower agents to handle multiple tasks simultaneously and boost productivity.",
-      href: "/services/multi-thread-agent",
+        href: "http://localhost:5173/",
     },
   ];
 
@@ -137,7 +137,6 @@ function Services() {
                 <p className="text-gray-400 text-sm">{service.description}</p>
               </div>
 
-              {/* CTA Icon */}
               <a
                 href={service.href}
                 className="absolute bottom-4 right-4 w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center hover:border-white transition"

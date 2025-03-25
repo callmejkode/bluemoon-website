@@ -32,14 +32,14 @@ const WhyChooseUs: React.FC = () => {
       case 2:
         return <EnterpriseData />;
       default:
-        return <FineTuning />; // default component
+        return <FineTuning />; 
     }
   };
 
 
   return (
     <section id="why-choose-us" className="relative py-20 bg-black text-white">
-      {/* Top Content */}
+
       <div className="flex flex-col items-center text-center mb-10">
         <span className="px-4 py-1 border border-white rounded-full text-sm text-gray-300">
         Built for Real-World Teams
@@ -48,13 +48,13 @@ const WhyChooseUs: React.FC = () => {
         <p className="text-gray-400 mt-3 max-w-2xl">
         From Software Architecture to Development to Testing, every role is powered by specialized agents working in sync.
         </p>
-        <button className="mt-6 flex items-center gap-2 px-6 py-2 border border-gray-500 rounded-md text-gray-300 hover:text-white hover:border-white transition-all">
+        <button onClick={() => window.location.href = "http://localhost:5173/"} className="mt-6 flex items-center gap-2 px-6 py-2 border border-gray-500 rounded-md text-gray-300 hover:text-white hover:border-white transition-all">
          View Demo →
         </button>
       </div>
 
       <div className="container mx-auto px-6 flex flex-col md:flex-row gap-10">
-        {/* Left Side */}
+
         <div className="flex flex-col space-y-6 w-full pt-6 md:w-1/2">
           {points.map((point, index) => (
             <div
@@ -71,7 +71,7 @@ const WhyChooseUs: React.FC = () => {
           ))}
         </div>
 
-        {/* Right Side: Dynamic Component */}
+
         <div className="w-full md:w-1/2  rounded-lg shadow-lg p-6">
           {renderComponent()}
         </div>

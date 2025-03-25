@@ -71,7 +71,7 @@ const Preloader: React.FC = () => {
           />
         </g>
       </svg>
-      <p className="text-xl font-medium tracking-wide">Welcome to BlueMoon</p>
+      <p className="text-xl font-medium tracking-wide">Your Dream, Our Code, Infinite Possibilities</p>
     </div>
   );
 };

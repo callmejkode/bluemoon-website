@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
           <button className="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition-all">
             View Demo →
           </button>
-          <a
+          <a target="_blank"
             href="https://forms.gle/RDwapy9eVabESTzL8"
             className="px-6 py-2 rounded-md border border-white hover:bg-white hover:text-black transition-all font-medium"
           >

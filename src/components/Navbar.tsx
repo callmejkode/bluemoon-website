@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
     <nav className="fixed top-0 left-0 w-full bg-black text-white z-10">
       <div className="container mx-auto flex justify-between items-center px-6 py-4 border-b border-gray-600 w-[90%] mx-auto opacity-70">
         {/* Logo */}
-        <h1 className="text-2xl font-semibold text-white">BlueMoon</h1>
+        <h1 className="text-2xl font-semibold text-white">AI BlueMoon</h1>
 
         {/* Navigation Links - Centered */}
         <ul className="hidden md:flex space-x-8 text-sm font-medium tracking-wide">

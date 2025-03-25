@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import arch from '../../asset/arch.png';
-// import in0 from '../../asset/in0.svg';
-import in1 from '../../asset/in1.png';
-// import in2 from '../../asset/in2.svg';
+import FineTuning from "./WhyChooseUsComponents/FineTuning";
+import FoundationModels from "./WhyChooseUsComponents/FoundationModels";
+import EnterpriseData from "./WhyChooseUsComponents/EnterpriseData";
+
 const WhyChooseUs: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -23,6 +23,19 @@ const WhyChooseUs: React.FC = () => {
         "Inject your enterprise data into AI BlueMoon’s collaborative agent engine to automate task pipelines, accelerate delivery, and ensure consistency across all code, test, and release workflows.",
     },
   ];
+  const renderComponent = () => {
+    switch (hoveredIndex) {
+      case 0:
+        return <FineTuning />;
+      case 1:
+        return <FoundationModels />;
+      case 2:
+        return <EnterpriseData />;
+      default:
+        return <FineTuning />; // default component
+    }
+  };
+
 
   return (
     <section id="why-choose-us" className="relative py-20 bg-black text-white">
@@ -40,18 +53,17 @@ const WhyChooseUs: React.FC = () => {
         </button>
       </div>
 
-      {/* Main Content */}
-      <div className="flex justify-center items-center gap-10">
-        {/* Left Side: Hover Effect Sections */}
-        <div className="flex flex-col space-y-6 w-1/2">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row gap-10">
+        {/* Left Side */}
+        <div className="flex flex-col space-y-6 w-full pt-6 md:w-1/2">
           {points.map((point, index) => (
             <div
               key={index}
-              className={`p-6 border-b border-gray-700 transition-all cursor-pointer ${
-                hoveredIndex === index ? "border-b-white opacity-100" : "opacity-50"
-              }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              className={`p-6 border-b border-gray-600 cursor-pointer transition-opacity duration-300 ${
+                hoveredIndex === index ? "opacity-100" : "opacity-70"
+              }`}
             >
               <h3 className="text-xl font-semibold">{point.title}</h3>
               <p className="text-gray-400 mt-2">{point.description}</p>
@@ -59,14 +71,9 @@ const WhyChooseUs: React.FC = () => {
           ))}
         </div>
 
-        {/* Right Side: Dynamic SVG Change */}
-        <div className="w-1/2 flex justify-center items-center">
-          <img
-            src={`${hoveredIndex !== null ? in1 : arch}`}
-            className={`w-96 transition-all duration-500 ${
-              hoveredIndex !== null ? "opacity-100 scale-105" : "opacity-50"
-            }`}
-          />
+        {/* Right Side: Dynamic Component */}
+        <div className="w-full md:w-1/2  rounded-lg shadow-lg p-6">
+          {renderComponent()}
         </div>
       </div>
     </section>

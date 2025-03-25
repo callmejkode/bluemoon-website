@@ -111,7 +111,7 @@ function Services() {
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-6">
+    <section className="bg-black text-white pb-20 px-6">
       <div className="container mx-auto text-center">
         <h2 className="text-5xl mb-6">Our Services</h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">

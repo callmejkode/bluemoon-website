@@ -6,6 +6,7 @@ import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 interface FooterProps {
   refs: {
     aboutRef: React.MutableRefObject<HTMLDivElement | null>;
+    workflowRef: React.MutableRefObject<HTMLDivElement | null>;
     chooseRef: React.MutableRefObject<HTMLDivElement | null>;
     servicesRef: React.MutableRefObject<HTMLDivElement | null>;
     contactRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -42,6 +43,14 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
                 className="hover:text-white transition"
               >
                 About
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => scrollToSection(refs.workflowRef)}
+                className="hover:text-white transition"
+              >
+                Workflow
               </button>
             </li>
             <li>

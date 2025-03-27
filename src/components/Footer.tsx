@@ -88,8 +88,8 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
             it’s AI made human
             </span>
           </h3>
-          <div className="flex space-x-8 text-gray-400">
-  {/* Phone - Clickable */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-8 space-y-4 sm:space-y-0 text-gray-400 mt-6">
+     
   <div className="flex items-center space-x-2">
     <AddIcCallIcon className="text-blue-400" />
     <a href="tel:6380741363" className="hover:text-white transition">

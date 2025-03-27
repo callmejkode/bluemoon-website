@@ -58,6 +58,13 @@ const Contact: React.FC = () => {
 
   {/* Black overlay behind all content */}
   <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
+  {/* Glowing Background Elements */}
+  <div className="absolute top-28 left-16 animate-pulse">
+        <div className="w-56 h-56 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-50 blur-2xl"></div>
+      </div>
+      <div className="absolute bottom-16 right-20 animate-pulse">
+        <div className="w-56 h-56 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 opacity-50 blur-2xl"></div>
+      </div>
 </section>
 
   );

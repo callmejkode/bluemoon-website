@@ -26,7 +26,9 @@ const Footer: React.FC<FooterProps> = ({ refs }) => {
       <div className="container mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 py-12">
         {/* First Section: BlueMoon */}
         <div className="col-span-2 space-y-2">
-          <h1 className="text-2xl font-semibold">BlueMoon</h1>
+          <h1 className="text-2xl font-semibold">AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-blue-500">
+          BlueMoon
+        </span></h1>
           <p className="text-gray-400 max-w-sm leading-relaxed">
             <span className="font-semibold" style={{lineHeight: 'normal' }}>
             AI BlueMoon is your intelligent workspace for building smarter, faster solutions. From architecture to testing, our AI agents collaborate like real teams to streamline every phase of your product lifecycle</span>

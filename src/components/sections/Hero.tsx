@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ servicesRef, loading }) => {
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const typingSpeed = isDeleting ? 100 : 150;
+  const typingSpeed = isDeleting ? 50 : 80;
 
   useEffect(() => {
     if (loading) return;
@@ -52,8 +52,8 @@ const Hero: React.FC<HeroProps> = ({ servicesRef, loading }) => {
     <section className="h-screen bg-black flex flex-col items-center justify-center text-center text-white relative overflow-hidden font-sans">
       {/* Heading Line 1 */}
       <motion.h1
-        className="text-[70px] leading-tight tracking-tight"
-        initial={{ opacity: 0, y: -40 }}
+className="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] leading-tight tracking-tight"
+initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
@@ -66,8 +66,8 @@ const Hero: React.FC<HeroProps> = ({ servicesRef, loading }) => {
 
       {/* Heading Line 2 */}
       <motion.h1
-        className="text-[70px] leading-tight tracking-tight"
-        initial={{ opacity: 0, y: -30 }}
+className="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] leading-tight tracking-tight"
+initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >

@@ -7,7 +7,7 @@ import SearchOffIcon from '@mui/icons-material/SearchOff';
 import DarkModeIcon from '@mui/icons-material/DarkMode'; 
 
 const tabs = [
-  { id: "Problem", label: "Problem", icon: <ErrorOutlineIcon fontSize="large" /> },
+  { id: "obstacle", label: "obstacle", icon: <ErrorOutlineIcon fontSize="large" /> },
   { id: "Current Solutions", label: "Solutions", icon: <BuildCircleIcon fontSize="large" /> },
   { id: "Gaps", label: "Gaps", icon: <SearchOffIcon fontSize="large" /> },
   { id: "BlueMoon Way", label: "BlueMoon", icon: <DarkModeIcon fontSize="large" /> }
@@ -16,10 +16,10 @@ const tabs = [
 type TabKey = (typeof tabs)[number]["id"];
 
 const content: Record<TabKey, React.ReactElement> = {
-  "Problem": (
+  "obstacle": (
     <>
       <h3 className="text-3xl md:text-4xl font-bold mb-3 text-white">
-        Problem
+        Obstacle
       </h3>
       <div className="w-16 h-[2px] bg-purple-500 mb-4" />
       <p className="text-gray-300 text-[1.15rem] leading-relaxed">
@@ -78,7 +78,7 @@ const content: Record<TabKey, React.ReactElement> = {
 };
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState<TabKey>("Problem");
+  const [activeTab, setActiveTab] = useState<TabKey>("obstacle");
 
   return (
 <section className="bg-black text-white min-h-screen py-24 px-4 md:px-16">

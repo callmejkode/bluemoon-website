@@ -92,18 +92,20 @@ initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.6 }}
       >
-        <button
-          onClick={() => (window.location.href = "http://localhost:5173/")}
-          className="bg-white text-black font-semibold px-8 py-3 rounded-md hover:bg-gray-200 transition shadow-lg border border-gray-400"
-        >
-          View Demo →
-        </button>
-        <button
-          onClick={scrollToServices}
-          className="text-white border border-white px-8 py-3 rounded-md hover:bg-white hover:text-black transition shadow-lg"
-        >
-          Our Services
-        </button>
+     <button
+  onClick={() => (window.location.href = "http://localhost:5173/")}
+  className="bg-white text-black font-semibold text-sm sm:text-base px-4 py-2 sm:px-8 sm:py-3 rounded-md hover:bg-gray-200 transition shadow-lg border border-gray-400"
+>
+  View Demo →
+</button>
+
+<button
+  onClick={scrollToServices}
+  className="text-white border border-white text-sm sm:text-base px-4 py-2 sm:px-8 sm:py-3 rounded-md hover:bg-white hover:text-black transition shadow-lg"
+>
+  Our Services
+</button>
+
       </motion.div>
 
       {/* Glowing Background Elements */}

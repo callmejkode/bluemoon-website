@@ -71,11 +71,12 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
         </ul>
 
         <button
-          onClick={() => window.location.href = "http://localhost:5173/"}
-          className="bg-gray-700 text-white font-semibold px-6 py-2 rounded-md hover:bg-gray-600 transition shadow-md"
-        >
-          View Demo →
-        </button>
+  onClick={() => window.location.href = "http://localhost:5173/"}
+  className="bg-gray-700 text-white font-semibold text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-2 rounded-md hover:bg-gray-600 transition shadow-md"
+>
+  View Demo →
+</button>
+
       </div>
     </nav>
   );

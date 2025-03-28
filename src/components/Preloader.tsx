@@ -132,7 +132,7 @@ const Preloader: React.FC<PreloaderProps> = ({ loading }) => {
           <animateTransform attributeName="transform" type="translate" values="0 0; 0 -19" dur="2s" repeatCount="indefinite" />
         </g>
       </svg>
-      <p className="text-xl font-medium tracking-wide">
+      <p className="text-xl font-medium tracking-wide text-center">
         Your Dream, Our Code, Infinite Possibilities
       </p>
     </div>

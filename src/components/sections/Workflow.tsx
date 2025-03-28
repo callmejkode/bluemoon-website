@@ -14,22 +14,30 @@ const Workflow: React.FC = () => {
       brief:"AI BlueMoon empowers you to build your own AI team by choosing from a lineup of pre-built expert agents such as Software Architect, Developer, QA, and HR. Each agent can be fully customized with domain-specific instructions, personality tone, and specialized expertise to match your unique workflow. Once configured, agents can be saved and reused across projects, making them reliable assets for both rapid prototyping and full-scale enterprise application development. Whether you're building something new or scaling an existing system, the right AI agent is always just a click away.",
       animation: { x: -100, opacity: 0 },
     },
+    // {
+    //   number: "02",
+    //   title: "Collaborate in the AI Office",
+    //   description:
+    //     "Engage one-on-one or orchestrate multi-agent task pipelines in a live discussion interface",
+    //   brief:"Step into the AI Office — a dynamic, visual workspace where AI agents operate like real teammates. Each agent appears as an interactive card, showcasing its role and activity status in real time. Simply assign tasks, and watch the discussion timeline fill with structured, role-based AI responses. The system delivers clean, formatted code snippets and auto-generated test cases, helping you move faster with clarity and precision. With execution tracking built-in, you can see exactly who contributed what, and when. It’s real AI teamwork — designed for real-world development.",
+    //   animation: { y: 100, opacity: 0 },
+    // },
     {
       number: "02",
-      title: "Collaborate in the AI Office",
-      description:
-        "Engage one-on-one or orchestrate multi-agent task pipelines in a live discussion interface",
-      brief:"Step into the AI Office — a dynamic, visual workspace where AI agents operate like real teammates. Each agent appears as an interactive card, showcasing its role and activity status in real time. Simply assign tasks, and watch the discussion timeline fill with structured, role-based AI responses. The system delivers clean, formatted code snippets and auto-generated test cases, helping you move faster with clarity and precision. With execution tracking built-in, you can see exactly who contributed what, and when. It’s real AI teamwork — designed for real-world development.",
-      animation: { y: 100, opacity: 0 },
-    },
-    {
-      number: "03",
       title: "Choose Your Workflow",
       description:
         "Whether it’s a quick reply or a full project flow — BlueMoon adapts to you to obtain your dream",
       brief:"AI BlueMoon offers two powerful ways to get work done. In Single-Agent Mode, you can talk directly to a specific agent — like asking QA to write test cases, or requesting the Developer to build a component. For more complex tasks, switch to the Multi-Agent Workflow, where your input is intelligently routed through a sequence: the Software Architect defines the structure, the Developer generates the code, and the QA agent validates it with automated testing. This chain mirrors real development team dynamics — all executed seamlessly within a unified AI environment.",
       animation: { x: 100, opacity: 0 },
     },
+    {
+        number: "03",
+        title: "Collaborate in the AI Office",
+        description:
+          "Engage one-on-one or orchestrate multi-agent task pipelines in a live discussion interface",
+        brief:"Step into the AI Office — a dynamic, visual workspace where AI agents operate like real teammates. Each agent appears as an interactive card, showcasing its role and activity status in real time. Simply assign tasks, and watch the discussion timeline fill with structured, role-based AI responses. The system delivers clean, formatted code snippets and auto-generated test cases, helping you move faster with clarity and precision. With execution tracking built-in, you can see exactly who contributed what, and when. It’s real AI teamwork — designed for real-world development.",
+        animation: { y: 100, opacity: 0 },
+      },
   ];
 
   return (
